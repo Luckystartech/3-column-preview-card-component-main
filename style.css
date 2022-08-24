@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 400;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    box-sizing: border-box;
+    width: 920px;
+    height: 500px;
+    display: flex;
+    min-width: 306px;
+}
+.content div{
+    padding: 3rem;
+}
+.content h1{
+    margin-top: 2.625rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.content p{
+    margin-top: 2.5rem;
+    margin-bottom: 5.4275rem;
+    line-height: 1.6rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.content a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding-top: 12px;
+    background-color: hsl(0, 0%, 95%);
+    width: 146px;
+    height: 44px;
+    margin-bottom: 48px;
+    font-weight: inherit;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.content a:hover{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%, 0.8);
+}
+.content a::after{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sedans{
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    background-color: hsl(31, 77%, 52%);
+}
+.sedans a{
+    color: hsl(31, 77%, 52%);
+}
+
+.SUVs{
+    background-color: hsl(184, 100%, 22%);
+}
+.SUVs a{
+    color: hsl(184, 100%, 22%);
+}
+.Luxury{
+    border-top-right-radius: 2%;
+    border-bottom-right-radius: 2%;
+    background-color: hsl(179, 100%, 13%);
+}
+.Luxury a{
+    color: hsl(179, 100%, 13%);
+
+    
+}
+/*-------media query--------*/
+@media (max-width: 57.5rem){
+    .content{
+        flex-direction: column;
+        width: 19.125rem;
+    }
+    .sedans{
+        border-top-right-radius: 2%;
+        border-bottom-left-radius: 0;
+    }
+    .Luxury{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 2%; 
+    }
+}
+
+  
